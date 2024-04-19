@@ -44,7 +44,11 @@ class Bucket{
 				}
 			}
 
-			//we dont check i < size() because we only use merge() for the end bucket, and the end bucket size will always be >= b.size()
+			while(i < size())
+			{
+				temp.push_back(v[i]);
+				i++;	
+			}
 			while(j < buck.size())
 			{
 				temp.push_back(b[j]);
